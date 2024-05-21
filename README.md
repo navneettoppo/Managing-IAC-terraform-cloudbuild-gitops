@@ -2,6 +2,38 @@
 
 This is the repo for the [Managing infrastructure as code with Terraform, Cloud Build, and GitOps](https://cloud.google.com/solutions/managing-infrastructure-as-code) tutorial. This tutorial explains how to manage infrastructure as code with Terraform and Cloud Build using the popular GitOps methodology. 
 
+```
+       Managing-IAC-terraform-cloudbuild-gitops/
+       ├── environments/
+       │   ├── dev/
+       │   │   ├── main.tf
+       │   │   ├── variables.tf
+       │   └── prod/
+       │       ├── main.tf
+       │       ├── variables.tf
+       ├── modules/
+       │   ├── network/
+       │   │   ├── main.tf
+       │   │   ├── variables.tf
+       │   │   └── outputs.tf
+       │   ├── compute/
+       │   │   ├── main.tf
+       │   │   ├── variables.tf
+       │   │   └── outputs.tf
+       │   └── storage/
+       │       ├── main.tf
+       │       ├── variables.tf
+       │       └── outputs.tf
+       ├── .gitignore
+       ├── CONTRIBUTING.md
+       ├── LICENSE
+       ├── README.md
+       └── cloudbuild.yaml
+
+```
+
+
+
 ## Configuring your **dev** environment
 
 Just for demostration, this step will:
